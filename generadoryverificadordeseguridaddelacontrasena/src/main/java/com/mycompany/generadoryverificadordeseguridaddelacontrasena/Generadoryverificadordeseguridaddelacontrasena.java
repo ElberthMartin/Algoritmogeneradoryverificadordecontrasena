@@ -3,6 +3,9 @@
  */
 
 package com.mycompany.generadoryverificadordeseguridaddelacontrasena;
+//importamos las bibliotecas necesarias
+import java.security.SecureRandom;
+import javax.swing.JOptionPane;
 
 /**
  *
