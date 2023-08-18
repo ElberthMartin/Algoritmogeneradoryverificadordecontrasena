@@ -51,6 +51,11 @@ int nivelSeguridad = JOptionPane.showOptionDialog(
             new String[]{"No seguro", "Seguro", "Muy seguro"},
             "Seguro");
 
+  //generamos la contraseña
+    
+     String contraseñaGenerada = generarContraseña(longitud, nivelSeguridad);
+    JOptionPane.showMessageDialog(null, "Contraseña generada: " + contraseñaGenerada);
     //
+
     }
 
