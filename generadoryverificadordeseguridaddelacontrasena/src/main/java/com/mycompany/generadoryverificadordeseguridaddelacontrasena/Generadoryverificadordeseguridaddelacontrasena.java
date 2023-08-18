@@ -39,6 +39,18 @@ public class Generadoryverificadordeseguridaddelacontrasena {
     // Solicitar la longitud de la contraseña al usuario
     int longitud = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la longitud de la contraseña:"));
   
+//Ahora mostramos un cuadro de diálogo para seleccionar el nivel de seguridad
+    
+int nivelSeguridad = JOptionPane.showOptionDialog(
+            null,
+            "Seleccione el nivel de seguridad:",
+            "Generador de Contraseñas",
+            JOptionPane.YES_NO_CANCEL_OPTION,
+            JOptionPane.QUESTION_MESSAGE,
+            null,
+            new String[]{"No seguro", "Seguro", "Muy seguro"},
+            "Seguro");
 
+    //
     }
 
