@@ -14,7 +14,19 @@ import javax.swing.JOptionPane;
 public class Generadoryverificadordeseguridaddelacontrasena {
 //definimos el  metodo main
    public static void main(String[] args) {
-    // ...
+       
+       //mostramos el cuadro de dialogo con opciones
+    int opcion = JOptionPane.showOptionDialog(
+        null,
+        "Seleccione una opción:",
+        "Generador de Contraseñas",
+        JOptionPane.YES_NO_OPTION,
+        JOptionPane.QUESTION_MESSAGE,
+        null,
+        new String[]{"Crear Contraseña", "Comprobar Contraseña"},
+        "Crear Contraseña");
+
+       
 }
 
     }
