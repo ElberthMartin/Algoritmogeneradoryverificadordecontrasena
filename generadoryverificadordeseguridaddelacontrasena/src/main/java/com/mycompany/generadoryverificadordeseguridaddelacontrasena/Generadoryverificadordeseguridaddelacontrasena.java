@@ -66,6 +66,16 @@ int nivelSeguridad = JOptionPane.showOptionDialog(
 
    evaluarSeguridad(contraseñaIngresada);
 }
+ //Definimos los caracteres disponibles según el nivel de seguridad seleccionado.
+public static String generarContraseña(int longitud, int nivelSeguridad) {
+    String caracteres = "";
 
+    if (nivelSeguridad == 0) {
+        caracteres = "abcdefghijklmnopqrstuvwxyz";
+    } else if (nivelSeguridad == 1) {
+        caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    } else if (nivelSeguridad == 2) {
+        caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-_=+";
+    }
     }
 
