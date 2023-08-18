@@ -77,5 +77,9 @@ public static String generarContraseña(int longitud, int nivelSeguridad) {
     } else if (nivelSeguridad == 2) {
         caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-_=+";
     }
+    
+    // Crear una instancia de SecureRandom 
+    SecureRandom random = new SecureRandom();
+
     }
 
