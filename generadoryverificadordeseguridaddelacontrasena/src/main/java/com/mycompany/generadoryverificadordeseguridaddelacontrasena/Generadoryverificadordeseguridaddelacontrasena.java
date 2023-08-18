@@ -12,8 +12,10 @@ import javax.swing.JOptionPane;
  * @author USER
  */
 public class Generadoryverificadordeseguridaddelacontrasena {
-
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
+//definimos el  metodo main
+   public static void main(String[] args) {
+    // ...
 }
+
+    }
+
