@@ -25,6 +25,13 @@ public class Generadoryverificadordeseguridaddelacontrasena {
         null,
         new String[]{"Crear Contraseña", "Comprobar Contraseña"},
         "Crear Contraseña");
+    //manejo de opciones seleccionados
+    if (opcion == 0) {
+    crearContraseña();
+} else if (opcion == 1) {
+    comprobarContraseña();
+}
+
 
        
 }
