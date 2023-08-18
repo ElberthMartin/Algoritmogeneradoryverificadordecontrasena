@@ -35,6 +35,10 @@ public class Generadoryverificadordeseguridaddelacontrasena {
 
        
 }
+ public static void crearContraseña() {
+    // Solicitar la longitud de la contraseña al usuario
+    int longitud = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la longitud de la contraseña:"));
+  
 
     }
 
