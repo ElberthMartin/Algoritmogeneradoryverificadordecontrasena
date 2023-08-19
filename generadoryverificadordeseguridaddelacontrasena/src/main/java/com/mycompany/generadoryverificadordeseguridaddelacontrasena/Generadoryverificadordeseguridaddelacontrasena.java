@@ -80,6 +80,10 @@ public static String generarContraseña(int longitud, int nivelSeguridad) {
     
     // Crear una instancia de SecureRandom 
     SecureRandom random = new SecureRandom();
+//creamos ahora  un StringBuilder para construir la contraseña
+StringBuilder contraseña = new StringBuilder();
+   
 
-    }
+
+}
 
