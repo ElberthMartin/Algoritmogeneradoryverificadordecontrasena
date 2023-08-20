@@ -113,6 +113,27 @@ public static void evaluarSeguridad(String contraseña) {
     if (contraseña.matches(".[!@#$%^&()-_=+].*")) {
         seguridad++;
     }
-
+    //determinamos el mensaje que tipo de seguridad tiene
+    
+    String mensaje = "";
+    switch (seguridad) {
+        case 0:
+            mensaje = "Muy débil 😢";
+            break;
+        case 1:
+            mensaje = "Débil 🙄";
+            break;
+        case 2:
+            mensaje = "Moderada 🙂";
+            break;
+        case 3:
+            mensaje = "Fuerte 😀";
+            break;
+        case 4:
+            mensaje = "Muy fuerte 😎";
+            break;
+    }
+ 
+}
 
 
