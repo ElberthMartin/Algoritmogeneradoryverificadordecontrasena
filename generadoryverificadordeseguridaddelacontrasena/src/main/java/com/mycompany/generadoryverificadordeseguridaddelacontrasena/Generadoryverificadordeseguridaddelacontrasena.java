@@ -55,8 +55,7 @@ int nivelSeguridad = JOptionPane.showOptionDialog(
     
      String contraseñaGenerada = generarContraseña(longitud, nivelSeguridad);
     JOptionPane.showMessageDialog(null, "Contraseña generada: " + contraseñaGenerada);
-    //aqui evaluamos
-    evaluarSeguridad(contraseñaGenerada);
+  
 }
  
  //Solicitamos al usuario que ingrese la contraseña a comprobar
@@ -118,22 +117,26 @@ public static void evaluarSeguridad(String contraseña) {
     String mensaje = "";
     switch (seguridad) {
         case 0:
-            mensaje = "Muy débil 😢";
+            mensaje = "Tu contrasña es Muy débil 😢";
             break;
         case 1:
-            mensaje = "Débil 🙄";
+            mensaje = "Tu contrasña es Débil 🙄";
             break;
         case 2:
-            mensaje = "Moderada 🙂";
+            mensaje = "Tu contrasña es Moderada 🙂";
             break;
         case 3:
-            mensaje = "Fuerte 😀";
+            mensaje = "Tu contrasña es Fuerte 😀";
             break;
         case 4:
-            mensaje = "Muy fuerte 😎";
+            mensaje = "Tu contrasña es Muy fuerte 😎";
             break;
     }
- 
+               JOptionPane.showMessageDialog(null, "Seguridad de la contraseña: " + mensaje);
+    
+    }
+    
+
 }
 
 
