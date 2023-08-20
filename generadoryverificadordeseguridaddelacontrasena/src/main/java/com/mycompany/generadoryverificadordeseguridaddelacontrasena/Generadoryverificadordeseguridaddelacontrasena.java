@@ -82,7 +82,15 @@ public static String generarContraseña(int longitud, int nivelSeguridad) {
     SecureRandom random = new SecureRandom();
 //creamos ahora  un StringBuilder para construir la contraseña
 StringBuilder contraseña = new StringBuilder();
-   
+  //
+  for (int i = 0; i < longitud; i++) {
+  //ahora generamos un bucle que se ejecuta longitud de veces para generar la contraseña
+int randomIndex = random.nextInt(caracteres.length());
+     
+char caracterAleatorio = caracteres.charAt(randomIndex);
+    
+contraseña.append(caracterAleatorio);
+}
 
 
 }
