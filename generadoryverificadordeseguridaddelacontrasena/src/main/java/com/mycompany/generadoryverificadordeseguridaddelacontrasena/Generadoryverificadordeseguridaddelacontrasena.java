@@ -95,4 +95,24 @@ contraseña.append(caracterAleatorio);
 return contraseña.toString();
 
 }
+public static void evaluarSeguridad(String contraseña) {
+    
+    //verificacion si la contraña tiene un cracter especial un aletra mayuscula
+    //y su respectivo incremento
+    int seguridad = 0;
+
+    if (contraseña.matches(".[a-z].")) {
+        seguridad++;
+    }
+    if (contraseña.matches(".[A-Z].")) {
+        seguridad++;
+    }
+    if (contraseña.matches(".\\d.")) {
+        seguridad++;
+    }
+    if (contraseña.matches(".[!@#$%^&()-_=+].*")) {
+        seguridad++;
+    }
+
+
 
