@@ -91,7 +91,8 @@ char caracterAleatorio = caracteres.charAt(randomIndex);
     
 contraseña.append(caracterAleatorio);
 }
-
+// Convertimos el contenido del StringBuilder en una cadena 
+return contraseña.toString();
 
 }
 
